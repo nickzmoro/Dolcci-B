@@ -1,0 +1,172 @@
+/* fonte */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*estilos gerais*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: var(--fontInter);
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* variáveis */
+:root {
+    --fontInter: "Inter", sans-serif;
+    --lightPink: #DEB6B7;
+    --darkPink: #BD8F93;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 100vh;
+
+    .container {
+        width: 450px;
+        min-height: 100vh;
+
+        .head {
+            width: 100%;
+            min-height: 20vh;
+            background: linear-gradient(90deg, var(--lightPink) 0%, var(--darkPink) 100%);
+            position: relative;
+
+            .logo-dolcci {
+                position: absolute;
+                bottom: -100px;
+                left: 30px;
+                background-color: #FAF3F6;
+                padding: 10px;
+                border-radius: 100px;
+            }
+        }
+
+        .content {
+            background: url(imgs/background.png);
+            background-size: cover;
+            width: 100%;
+            min-height: 100vh;
+            padding: 120px 30px 0 30px;
+
+            .presentation {
+                border-bottom: 1px solid #000;
+                padding-bottom: 15px;
+
+                h1 {
+                    font-size: 1.7rem;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                }
+
+                h1, p {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .sweets {
+                padding: 30px 0 50px 0;
+
+                .our-sweets {
+                    position: relative;
+                    margin-bottom: 20px;
+
+                    .donut {
+                        width: 20px;
+                        transform: translateY(3px);
+                    }
+
+                    .vector {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 160px;
+                    }
+                }
+
+                .sw-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 50px;
+
+                    .sw-all {
+                        display: flex;
+                        gap: 20px;
+
+                        img {
+                            padding: 12px 12px 100px 12px;
+                            background-color: #fff;
+                            border-radius: 10px;
+                            box-shadow: 0 2px 4px #00000041;
+                        }
+
+                        .sw-info {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            justify-content: space-between;
+
+                            ul {
+                                li {
+                                    font-size: 0.98rem;
+                                    margin-left: 15px;
+                                }
+                            }
+
+                            .btn-see-more {
+                                border: none;
+                                background-color: transparent;
+
+                                a {
+                                    color: var(--darkPink);
+                                    font-size: 0.95rem;
+                                }
+                            }
+
+                            .btn-order {
+                                padding: 8px 20px;
+                                border-radius: 50px;
+                                background-color: #fff;
+                                border: 2px solid #000;
+                                font-weight: 600;
+                                cursor: pointer;
+                                font-size: 0.9rem;
+                                transition: 0.2s ease;
+
+                                &:hover {
+                                    background-color: #000;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+
+                    .sw-enrolado, .sw-bala {
+                        flex-direction: row-reverse;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: var(--darkPink);
+        padding: 5px 0px;
+        text-align: center;
+        color: #fff;
+        
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
