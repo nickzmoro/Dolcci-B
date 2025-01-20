@@ -13,6 +13,11 @@
 html,
 body {
     overflow-x: hidden;
+
+    ::selection {
+        background-color: var(--lightPink);
+        color: #fff;
+    }
 }
 
 /* variáveis */
@@ -32,6 +37,8 @@ main {
     .container {
         width: 450px;
         min-height: 100vh;
+        position: relative;
+        overflow: hidden;
 
         .head {
             width: 100%;
@@ -68,7 +75,8 @@ main {
                     font-size: 1.1rem;
                 }
 
-                h1, p {
+                h1,
+                p {
                     margin-bottom: 20px;
                 }
             }
@@ -151,7 +159,8 @@ main {
                         }
                     }
 
-                    .sw-enrolado, .sw-bala {
+                    .sw-enrolado,
+                    .sw-bala {
                         flex-direction: row-reverse;
                     }
                 }
@@ -159,14 +168,82 @@ main {
         }
     }
 
+    /* footer */
     footer {
         background-color: var(--darkPink);
         padding: 5px 0px;
         text-align: center;
         color: #fff;
-        
+
         p {
             font-size: 0.9rem;
         }
+    }
+
+    /* detalhes dos sabores (veja mais) */
+    .details-flavors {
+        position: fixed;
+        width: 350px;
+        top: 10%;
+        background-color: #fff;
+        padding: 35px 30px;
+        border-radius: 10px;
+        z-index: 3;
+        visibility: hidden;
+        
+        h4 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: var(--darkPink);
+        }
+
+        h2 {
+            width: 150px;
+            font-size: 1.6rem;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            margin: 15px 0 0px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+
+            li::marker {
+                color: var(--darkPink);
+                border: 1px solid #000;
+            }
+        }
+
+        .btn-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+            button {
+                background-color: var(--darkPink);
+                border-radius: 5px;
+                border: none;
+                padding: 2px 2px 0 2px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #a57f82;
+                }
+            }
+        }
+    }
+
+    .mask {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000c7;
+        backdrop-filter: blur(2px);
+        z-index: 2;
+        visibility: hidden;
     }
 }
