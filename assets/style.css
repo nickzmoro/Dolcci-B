@@ -181,56 +181,67 @@ main {
     }
 
     /* detalhes dos sabores (veja mais) */
-    .details-flavors {
+    .details-flavors-content {
         position: fixed;
-        width: 350px;
-        top: 10%;
-        background-color: #fff;
-        padding: 35px 30px;
-        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
         z-index: 3;
-        visibility: hidden;
-        
-        h4 {
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            font-weight: 400;
-            color: var(--darkPink);
-        }
 
-        h2 {
-            width: 150px;
-            font-size: 1.6rem;
-            border-bottom: 1px solid #000;
-            padding-bottom: 10px;
-        }
-
-        ul {
-            margin: 15px 0 0px 25px;
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-
-            li::marker {
+        .details-flavors {
+            width: 350px;
+            background-color: #fff;
+            padding: 35px 30px;
+            border-radius: 10px;
+            visibility: hidden;
+            position: relative;
+            pointer-events: all;
+            
+            h4 {
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                font-weight: 400;
                 color: var(--darkPink);
-                border: 1px solid #000;
             }
-        }
-
-        .btn-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-
-            button {
-                background-color: var(--darkPink);
-                border-radius: 5px;
-                border: none;
-                padding: 2px 2px 0 2px;
-                cursor: pointer;
-
-                &:hover {
-                    background-color: #a57f82;
+    
+            h2 {
+                width: 150px;
+                font-size: 1.6rem;
+                border-bottom: 1px solid #000;
+                padding-bottom: 10px;
+            }
+    
+            ul {
+                margin: 15px 0 0px 25px;
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+    
+                li::marker {
+                    color: var(--darkPink);
+                    border: 1px solid #000;
+                }
+            }
+    
+            .btn-close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+    
+                button {
+                    background-color: var(--darkPink);
+                    border-radius: 5px;
+                    border: none;
+                    padding: 2px 2px 0 2px;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background-color: #a57f82;
+                    }
                 }
             }
         }
