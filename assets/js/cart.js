@@ -63,7 +63,7 @@ function updateCart() {
         cartItemElement.innerHTML = `
             <div class="resume-info">
                 <div>
-                    <p>${item.quantity}x ${item.name}</p>
+                    <p>${item.quantity}x ${item.name} (${(item.price).toLocaleString("pt-br", { style: "currency", currency: "BRL"})})</p>
                 </div>
                 <button class="remove-from-cart-btn" data-name="${item.name}">
                     <i class="bi bi-trash3-fill"></i>
