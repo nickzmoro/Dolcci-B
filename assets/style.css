@@ -131,11 +131,13 @@ main {
                 .sw-container {
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
+                    align-items: flex-start;
+                    justify-content: space-between;
                     gap: 50px;
 
                     .sw-all {
                         display: flex;
+                        justify-content: space-between;
                         gap: 20px;
 
                         img {
@@ -152,6 +154,9 @@ main {
                             justify-content: space-between;
 
                             ul {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 2px;
                                 li {
                                     font-size: 0.98rem;
                                     margin-left: 15px;
@@ -189,6 +194,13 @@ main {
                     .sw-enrolado,
                     .sw-bala {
                         flex-direction: row-reverse;
+                    }
+
+                    .sw-bala {
+                        .sw-info {
+                            justify-content: start;
+                            gap: 20px;
+                        }
                     }
                 }
             }
@@ -249,7 +261,7 @@ main {
                 margin: 15px 0 0px 25px;
                 display: flex;
                 flex-direction: column;
-                gap: 2px;
+                gap: 5px;
 
                 li::marker {
                     color: var(--darkPink);
@@ -330,6 +342,7 @@ main {
                         padding: 5px;
                         display: flex;
                         justify-content: space-between;
+                        gap: 5px;
 
                         .add-to-cart-btn {
                             width: 25px !important;
@@ -371,6 +384,9 @@ main {
                 #cart-items {
                     padding: 5px 10px;
                     border: 1px solid #0000003f;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
                 }
 
                 button {
@@ -391,6 +407,24 @@ main {
                     &:hover {
                         background-color: #000;
                         color: #fff;
+                    }
+                }
+
+                .resume-info {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 10px;
+
+                    button {
+                        min-width: 30px;
+                        height: 25px;
+                        background-color: #FF0000;
+                        border: none;
+
+                        i {
+                            color: #fff;
+                        }
                     }
                 }
             }

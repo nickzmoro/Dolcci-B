@@ -36,16 +36,3 @@ btnCloseBolacha.addEventListener("click", () => {
     detailsBolacha.style.opacity = 0;
     mask.style.visibility = "hidden";
 })
-
-// veja mais (bala) | fechar
-btnSeeMoreBala.addEventListener("click", () => {
-    detailsBala.style.visibility = "visible";
-    detailsBala.style.opacity = 1;
-    mask.style.visibility = "visible";
-})
-
-btnCloseBala.addEventListener("click", () => {
-    detailsBala.style.visibility = "hidden";
-    detailsBolacha.style.opacity = 0;
-    mask.style.visibility = "hidden";
-})
