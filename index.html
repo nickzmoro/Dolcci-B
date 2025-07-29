@@ -1,536 +1,792 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dolcci’B</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="shortcut icon" href="assets/imgs/logo-DolcciB.png" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/imgs/logo-DolcciB.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
+  <body>
     <main>
-        <section class="container">
-
-            <div class="head">
-                <div class="logo-dolcci">
-                    <img src="assets/imgs/logo-DolcciB.png" alt="Dolcci'B-logo" loading="lazy">
-                </div>
+      <section class="container">
+        <!-- AVISO ESPECIAL -->
+        <div class="news-container">
+          <div class="news-text-container">
+            <div class="close-news">
+              <button class="btn-close-news" onclick="closeToast()">
+                <img
+                  width="22"
+                  height="22"
+                  src="https://img.icons8.com/ios-glyphs/50/FFFFFF/multiply.png"
+                  alt="multiply"
+                />
+              </button>
             </div>
+            <div class="top">
+              <img
+                width="35"
+                height="35"
+                src="https://img.icons8.com/forma-bold-filled/35/DEB6B7/siren.png"
+                alt="siren"
+              />
+              <p>
+                <span>NOVIDADE NA ÁREA: </span>Morango do Amor só aqui na
+                Dolcci'B!
+              </p>
+            </div>
+            <a href="#special" onclick="closeToast()"
+              >👉 Peça já o seu antes que acabe!</a
+            >
+          </div>
+        </div>
 
-            <section class="content">
-                <div class="presentation">
-                    <h1>Dolcci’B</h1>
-                    <p>- Doces finos e tradicionais</p>
-                    <p>📍 <strong>Bauru-SP</strong></p>
+        <div class="head">
+          <div class="logo-dolcci">
+            <img
+              src="assets/imgs/logo-DolcciB.png"
+              alt="Dolcci'B-logo"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <section class="content">
+          <div class="presentation">
+            <h1>Dolcci’B</h1>
+            <p>- Doces finos e tradicionais</p>
+            <p>📍 <strong>Bauru-SP</strong></p>
+          </div>
+
+          <div class="sweets">
+            <h2 class="our-sweets">
+              Nossos Doces
+              <img
+                src="assets/imgs/little-rosca.png"
+                alt=""
+                class="donut"
+                loading="lazy"
+              />
+              <img
+                src="assets/imgs/vetor-linha.png"
+                alt=""
+                class="vector"
+                loading="lazy"
+              />
+            </h2>
+
+            <div class="sw-container">
+              <div class="sw-bombom sw-all">
+                <img src="assets/imgs/bombons.png" alt="bombom" />
+                <div class="sw-info">
+                  <h3>Bombons</h3>
+                  <ul>
+                    <li>Ninho</li>
+                    <li>Romeu/Julieta</li>
+                    <li>Paçoca</li>
+                    <li>Maracujá</li>
+                    <li>Churros</li>
+                    <li>Café</li>
+                    <li>Açaí</li>
+                    <li>Caramelo</li>
+                  </ul>
+                  <button class="btn-see-more btn-see-more-bombom">
+                    <a href="#">Veja mais</a>
+                  </button>
+                  <button class="btn-order">Peça o seu!</button>
                 </div>
+              </div>
 
-                <div class="sweets">
-
-                    <h2 class="our-sweets">Nossos Doces
-                        <img src="assets/imgs/little-rosca.png" alt="" class="donut" loading="lazy">
-                        <img src="assets/imgs/vetor-linha.png" alt="" class="vector" loading="lazy">
-                    </h2>
-
-                    <div class="sw-container">
-                        <div class="sw-bombom sw-all">
-                            <img src="assets/imgs/bombons.png" alt="bombom">
-                            <div class="sw-info">
-                                <h3>Bombons</h3>
-                                <ul>
-                                    <li>Ninho</li>
-                                    <li>Romeu/Julieta</li>
-                                    <li>Paçoca</li>
-                                    <li>Maracujá</li>
-                                    <li>Churros</li>
-                                    <li>Café</li>
-                                    <li>Açaí</li>
-                                    <li>Caramelo</li>
-                                </ul>
-                                <button class="btn-see-more btn-see-more-bombom"><a href="#">Veja mais</a></button>
-                                <button class="btn-order">Peça o seu!</button>
-                            </div>
-                        </div>
-
-                        <div class="sw-enrolado sw-all">
-                            <img src="assets/imgs/enroladinhos.png" alt="enrolado">
-                            <div class="sw-info">
-                                <h3>Brigadeiros enrolados</h3>
-                                <ul>
-                                    <li>Ninho</li>
-                                    <li>Paçoca</li>
-                                    <li>Churros</li>
-                                    <li>Café</li>
-                                    <li>Coco queimado</li>
-                                </ul>
-                                <button class="btn-see-more btn-see-more-enrolado"><a href="#">Veja mais</a></button>
-                                <button class="btn-order">Peça o seu!</button>
-                            </div>
-                        </div>
-
-                        <div class="sw-bolacha sw-all">
-                            <img src="assets/imgs/bolachinhas.png" alt="bolachinha">
-                            <div class="sw-info">
-                                <h3>Bolachinhas</h3>
-                                <ul>
-                                    <li>Bolachinha amanteigada c/ goiabada</li>
-                                    <li>Cookies (brigadeiro)</li>
-                                    <li>Cookies (doce de leite)</li>
-                                </ul>
-                                <button class="btn-see-more btn-see-more-bolacha"><a href="#">Veja mais</a></button>
-                                <button class="btn-order">Peça o seu!</button>
-                            </div>
-                        </div>
-
-                        <div class="sw-bala sw-all">
-                            <img src="assets/imgs/bala-brigadeiro.png" alt="balas">
-                            <div class="sw-info">
-                                <h3>Bala de brigadeiro</h3>
-                                <ul>
-                                    <li>Chocolate 70%</li>
-                                    <li>Ninho</li>
-                                    <li>Paçoca</li>
-                                </ul>
-                                <button class="btn-order">Peça o seu!</button>
-                            </div>
-                        </div>
-                    </div>
-
+              <div class="sw-enrolado sw-all">
+                <img src="assets/imgs/enroladinhos.png" alt="enrolado" />
+                <div class="sw-info">
+                  <h3>Brigadeiros enrolados</h3>
+                  <ul>
+                    <li>Ninho</li>
+                    <li>Paçoca</li>
+                    <li>Churros</li>
+                    <li>Café</li>
+                    <li>Coco queimado</li>
+                  </ul>
+                  <button class="btn-see-more btn-see-more-enrolado">
+                    <a href="#">Veja mais</a>
+                  </button>
+                  <button class="btn-order">Peça o seu!</button>
                 </div>
-            </section>
+              </div>
 
-            <footer>
-                <p>Copyright© 2025. Todos os direitos reservados.</p>
-            </footer>
+              <div class="sw-bolacha sw-all">
+                <img src="assets/imgs/bolachinhas.png" alt="bolachinha" />
+                <div class="sw-info">
+                  <h3>Bolachinhas</h3>
+                  <ul>
+                    <li>Bolachinha amanteigada c/ goiabada</li>
+                    <li>Cookies (brigadeiro)</li>
+                    <li>Cookies (doce de leite)</li>
+                  </ul>
+                  <button class="btn-see-more btn-see-more-bolacha">
+                    <a href="#">Veja mais</a>
+                  </button>
+                  <button class="btn-order">Peça o seu!</button>
+                </div>
+              </div>
 
+              <div class="sw-bala sw-all" id="special">
+                <img src="assets/imgs/morango-do-amor.jpg" alt="balas" />
+                <div class="sw-info">
+                  <h3>Outros</h3>
+                  <ul>
+                    <li>Morango do Amor</li>
+                    <li>Cone de Dois Amores</li>
+                    <li>Cone de Sensação</li>
+                    <li>Uva do Amor</li>
+                    <li>Bala baiana</li>
+                  </ul>
+                  <button class="btn-order">Peça o seu!</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <!-- DETALHE SABOR BOMBOM -->
-        <div class="details-flavors-content">
-            <div class="details-bombom details-flavors">
-                <div class="btn-close details-btn">
-                    <button id="btn-close-bombom"><img width="30" height="30"
-                            src="https://img.icons8.com/ios-glyphs/50/FFFFFF/multiply.png" alt="multiply" /></button>
-                </div>
+        <footer>
+          <p id="copyright">Copyright© 2025. Todos os direitos reservados.</p>
+        </footer>
+      </section>
 
-                <h4>Sabores</h4>
-                <h2>Bombom</h2>
-                <ul>
-                    <li>Ninho</li>
-                    <li>Ninho c/ creme de avelã</li>
-                    <li>Ninho c/ geleia de frutas vermelhas</li>
-                    <li>Ninho c/ uva</li>
-                    <li>Ninho c/ morango</li>
-                    <li>Brigadeiro de chocolate 70%</li>
-                    <li>Brigadeiro c/ creme de paçoca</li>
-                    <li>Brigadeiro c/ cereja</li>
-                    <li>Limão siciliano</li>
-                    <li>Açaí</li>
-                    <li>Churros</li>
-                    <li>Doce de leite com nozes</li>
-                    <li>Caramelo crocante</li>
-                    <li>Maracujá</li>
-                    <li>Bombotone</li>
-                    <li>Romeu e Julieta</li>
-                    <li>Paçoca</li>
-                    <li>Café</li>
-                </ul>
-            </div>
+      <!-- DETALHE SABOR BOMBOM -->
+      <div class="details-flavors-content">
+        <div class="details-bombom details-flavors">
+          <div class="btn-close details-btn">
+            <button id="btn-close-bombom">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/50/FFFFFF/multiply.png"
+                alt="multiply"
+              />
+            </button>
+          </div>
+
+          <h4>Sabores</h4>
+          <h2>Bombom</h2>
+          <ul>
+            <li>Ninho c/ uva ⭐</li>
+            <li>Ninho c/ morango ⭐</li>
+            <li>Ninho</li>
+            <li>Ninho c/ creme de avelã</li>
+            <li>Ninho c/ geleia de frutas vermelhas</li>
+            <li>Brigadeiro de chocolate 70%</li>
+            <li>Brigadeiro c/ creme de paçoca</li>
+            <li>Brigadeiro c/ cereja</li>
+            <li>Limão siciliano</li>
+            <li>Açaí</li>
+            <li>Churros</li>
+            <li>Doce de leite com nozes</li>
+            <li>Caramelo crocante</li>
+            <li>Maracujá</li>
+            <li>Romeu e Julieta</li>
+            <li>Paçoca</li>
+            <li>Café</li>
+          </ul>
         </div>
-        <!-- FIM DETALHE SABOR BOMBOM -->
+      </div>
+      <!-- FIM DETALHE SABOR BOMBOM -->
 
-        <!-- DETALHE SABOR ENROLADO -->
-        <div class="details-flavors-content">
-            <div class="details-enrolados details-flavors">
-                <div class="btn-close details-btn">
-                    <button id="btn-close-enrolado"><img width="30" height="30"
-                            src="https://img.icons8.com/ios-glyphs/50/FFFFFF/multiply.png" alt="multiply" /></button>
-                </div>
+      <!-- DETALHE SABOR ENROLADO -->
+      <div class="details-flavors-content">
+        <div class="details-enrolados details-flavors">
+          <div class="btn-close details-btn">
+            <button id="btn-close-enrolado">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/50/FFFFFF/multiply.png"
+                alt="multiply"
+              />
+            </button>
+          </div>
 
-                <h4>Sabores</h4>
-                <h2>Enrolados</h2>
-                <ul>
-                    <li>Ninho</li>
-                    <li>Ninho c/ confeito de creme de avelã</li>
-                    <li>Brigadeiro de chocolate 70%</li>
-                    <li>Brigadeiro de coco</li>
-                    <li>Churros</li>
-                    <li>Coco queimado</li>
-                    <li>Maracujá c/ coco</li>
-                    <li>Paçoca</li>
-                    <li>Café</li>
-                </ul>
-            </div>
+          <h4>Sabores</h4>
+          <h2>Enrolados</h2>
+          <ul>
+            <li>Ninho</li>
+            <li>Ninho c/ confeito de creme de avelã</li>
+            <li>Brigadeiro de chocolate 70%</li>
+            <li>Brigadeiro de coco</li>
+            <li>Brigadeiro de morango</li>
+            <li>Churros</li>
+            <li>Coco queimado</li>
+            <li>Maracujá c/ coco</li>
+            <li>Paçoca</li>
+            <li>Café</li>
+          </ul>
         </div>
-        <!-- FIM DETALHE SABOR ENROLADO -->
+      </div>
+      <!-- FIM DETALHE SABOR ENROLADO -->
 
-        <!-- DETALHE SABOR BOLACHA -->
-        <div class="details-flavors-content">
-            <div class="details-bolacha details-flavors">
-                <div class="btn-close details-btn">
-                    <button id="btn-close-bolacha"><img width="30" height="30"
-                            src="https://img.icons8.com/ios-glyphs/50/FFFFFF/multiply.png" alt="multiply" /></button>
-                </div>
+      <!-- DETALHE SABOR BOLACHA -->
+      <div class="details-flavors-content">
+        <div class="details-bolacha details-flavors">
+          <div class="btn-close details-btn">
+            <button id="btn-close-bolacha">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/50/FFFFFF/multiply.png"
+                alt="multiply"
+              />
+            </button>
+          </div>
 
-                <h4>Sabores</h4>
-                <h2>Bolachinhas</h2>
-                <ul>
-                    <li>Bolachinha amanteigada c/ goiabada</li>
-                    <li>Bolachinha de leite condensado c/ chocolate</li>
-                    <li>Bolachinha de nata com coco</li>
-                    <li>Cookies com recheio de brigadeiro</li>
-                    <li>Cookies com recheio de doce de leite</li>
-                </ul>
-            </div>
+          <h4>Sabores</h4>
+          <h2>Bolachinhas</h2>
+          <ul>
+            <li>Bolachinha amanteigada c/ goiabada</li>
+            <li>Bolachinha de leite condensado c/ chocolate</li>
+            <li>Bolachinha de nata com coco</li>
+            <li>Cookies com recheio de brigadeiro</li>
+            <li>Cookies com recheio de doce de leite</li>
+          </ul>
         </div>
-        <!-- FIM DETALHE SABOR BOLACHA -->
+      </div>
+      <!-- FIM DETALHE SABOR BOLACHA -->
 
-        <!-- DETALHE SABOR BALA -->
-        <div class="details-flavors-content">
-            <div class="details-balas details-flavors">
-                <div class="btn-close details-btn">
-                    <button id="btn-close-bala"><img width="30" height="30"
-                            src="https://img.icons8.com/ios-glyphs/50/FFFFFF/multiply.png" alt="multiply" /></button>
-                </div>
+      <!-- DETALHE SABOR BALA -->
+      <div class="details-flavors-content">
+        <div class="details-balas details-flavors">
+          <div class="btn-close details-btn">
+            <button id="btn-close-bala">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/50/FFFFFF/multiply.png"
+                alt="multiply"
+              />
+            </button>
+          </div>
 
-                <h4>Sabores</h4>
-                <h2>Bala</h2>
-                <ul>
-                    <li>Ninho</li>
-                    <li>Ninho c/ creme de avelã</li>
-                    <li>Ninho c/ geleia de frutas vermelhas</li>
-                    <li>Brigadeiro</li>
-                    <li>Brigadeiro c/ creme de paçoca</li>
-                    <li>Brigadeiro c/ cereja</li>
-                    <li>Limão siciliano</li>
-                    <li>Açaí</li>
-                    <li>Churros</li>
-                    <li>Doce de leite com nozes</li>
-                    <li>Caramelo crocante</li>
-                    <li>Maracujá</li>
-                    <li>Bombotone</li>
-                    <li>Romeu e Julieta</li>
-                    <li>Paçoca</li>
-                    <li>Ninho c/ uva</li>
-                    <li>Ninho c/ morango</li>
-                    <li>Café</li>
-                </ul>
-            </div>
+          <h4>Sabores</h4>
+          <h2>Bala</h2>
+          <ul>
+            <li>Ninho</li>
+            <li>Ninho c/ creme de avelã</li>
+            <li>Ninho c/ geleia de frutas vermelhas</li>
+            <li>Brigadeiro</li>
+            <li>Brigadeiro c/ creme de paçoca</li>
+            <li>Brigadeiro c/ cereja</li>
+            <li>Limão siciliano</li>
+            <li>Açaí</li>
+            <li>Churros</li>
+            <li>Doce de leite com nozes</li>
+            <li>Caramelo crocante</li>
+            <li>Maracujá</li>
+            <li>Bombotone</li>
+            <li>Romeu e Julieta</li>
+            <li>Paçoca</li>
+            <li>Ninho c/ uva</li>
+            <li>Ninho c/ morango</li>
+            <li>Café</li>
+          </ul>
         </div>
-        <!-- FIM DETALHE SABOR BALA -->
+      </div>
+      <!-- FIM DETALHE SABOR BALA -->
 
-        <!-- MODAL CART -->
-        <div class="modal-cart-container">
-            <div class="modal-cart-content">
-                <div class="btn-close">
-                    <button id="btn-close-modal-cart"><img width="30" height="30"
-                            src="https://img.icons8.com/ios-glyphs/50/FFFFFF/multiply.png" alt="multiply" /></button>
-                </div>
+      <!-- MODAL CART -->
+      <div class="modal-cart-container">
+        <div class="modal-cart-content">
+          <div class="btn-close">
+            <button id="btn-close-modal-cart">
+              <img
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/50/FFFFFF/multiply.png"
+                alt="multiply"
+              />
+            </button>
+          </div>
 
-                <div class="txt-choice">
-                    <h2>Escolha seu doce</h2>
-                </div>
+          <div class="txt-choice">
+            <h2>Escolha seu doce</h2>
+          </div>
 
-                <div class="dropdowns-items">
-                    <details>
-                        <summary>Bombom</summary>
+          <div class="dropdowns-items">
+            <!-- OPÇÕES BOMBOM -->
+            <details>
+              <summary>Bombom</summary>
 
-                        <div class="item">
-                            <p>Ninho (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Ninho" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Ninho (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Ninho"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Ninho c/ creme de avelã (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Ninho c/ creme de avelã" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Ninho c/ creme de avelã (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Ninho c/ creme de avelã"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Ninho c/ frutas vermelhas (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Ninho c/ geleia de frutas vermelhas"
-                                data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Ninho c/ frutas vermelhas (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Ninho c/ geleia de frutas vermelhas"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Ninho c/ uva (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Ninho c/ uva" data-price="12">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Ninho c/ uva (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Ninho c/ uva"
+                  data-price="12"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Ninho c/ morango (2 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Ninho c/ morango" data-price="12">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Ninho c/ morango (1 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Ninho c/ morango"
+                  data-price="6.5"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Brigadeiro de chocolate 70% (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Brigadeiro 70%" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Brigadeiro de chocolate 70% (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Brigadeiro 70%"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Brigadeiro c/ creme de paçoca (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Brigadeiro c/ creme de paçoca" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Brigadeiro c/ creme de paçoca (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Brigadeiro c/ creme de paçoca"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Brigadeiro c/ cereja (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Brigadeiro c/ cereja" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Brigadeiro c/ cereja (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Brigadeiro c/ cereja"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Limão siciliano (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Limão siciliano" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Limão siciliano (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Limão siciliano"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Açaí (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Açaí" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Açaí (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Açaí"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Churros (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Churros" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Churros (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Churros"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Doce de leite c/ nozes (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Doce de leite c/ nozes" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Doce de leite c/ nozes (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Doce de leite c/ nozes"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Caramelo crocante (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Caramelo crocante" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Caramelo crocante (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Caramelo crocante"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Maracujá (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Maracujá" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Maracujá (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Maracujá"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Bombotone (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Bombotone" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Romeu e Julieta (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Romeu e Julieta"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Romeu e Julieta (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Romeu e Julieta" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Paçoca (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Paçoca"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Paçoca (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Paçoca" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Café (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bombom de Café"
+                  data-price="11"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+            </details>
+            <!-- FIM OPÇÕES BOMBOM -->
 
-                        <div class="item">
-                            <p>Café (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Bombom de Café" data-price="11">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+            <!-- OPÇÕES ENROLADOS -->
+            <details>
+              <summary>Enroladinho</summary>
 
-                    </details>
+              <div class="item">
+                <p>Ninho (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Ninho"
+                  data-price="8"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                    <details>
-                        <summary>Enroladinho</summary>
+              <div class="item">
+                <p>Ninho c/ confeito de creme de avelã (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Enroladinho de Ninho c/ confeito de creme de avelã"
+                  data-price="8"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Ninho (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Ninho" data-price="8">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Brigadeiro de chocolate 70% (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Enroladinho de Brigadeiro 70%"
+                  data-price="8"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Ninho c/ confeito de creme de avelã (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Enroladinho de Ninho c/ confeito de creme de avelã" data-price="8">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Brigadeiro de coco (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Enroladinho de Brigadeiro de coco"
+                  data-price="8"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Brigadeiro de chocolate 70% (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Enroladinho de Brigadeiro 70%" data-price="8">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Brigadeiro de morango (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Enroladinho de Brigadeiro de Morango"
+                  data-price="8"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Brigadeiro de coco (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Enroladinho de Brigadeiro de coco" data-price="8">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Churros (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Enroladinho de Churros"
+                  data-price="8"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Churros (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Enroladinho de Churros" data-price="8">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Coco queimado (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Enroladinho de Coco queimado"
+                  data-price="8"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Coco queimado (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Enroladinho de Coco queimado" data-price="8">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Maracujá c/ coco (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Enroladinho de Maracujá com coco"
+                  data-price="8"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Maracujá c/ coco (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Enroladinho de Maracujá com coco" data-price="8">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Paçoca (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Enrolado de Paçoca"
+                  data-price="8"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Paçoca (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Enrolado de Paçoca" data-price="8">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Café (4 un.)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Enrolado de Café"
+                  data-price="8"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+            </details>
+            <!-- FIM OPÇÕES ENROLADOS -->
 
-                        <div class="item">
-                            <p>Café (4 un.)</p>
-                            <button class="add-to-cart-btn" data-name="Enrolado de Café" data-price="8">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+            <!-- OPÇÕES BOLACHINHAS -->
+            <details>
+              <summary>Bolachinha</summary>
 
-                    </details>
+              <div class="item">
+                <p>Amanteigada c/ goiabada (100g)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bolachinha amanteigada c/ goiabada"
+                  data-price="12"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                    <details>
-                        <summary>Bolachinha</summary>
+              <div class="item">
+                <p>Leite condensado c/ chocolate (90g)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bolachinha de leite condensado c/ chocolate"
+                  data-price="9"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Amanteigada c/ goiabada (100g)</p>
-                            <button class="add-to-cart-btn" data-name="Bolachinha amanteigada c/ goiabada" data-price="12">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Nata c/ coco (90g)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bolachinha de nata com coco"
+                  data-price="9"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Leite condensado c/ chocolate (90g)</p>
-                            <button class="add-to-cart-btn" data-name="Bolachinha de leite condensado c/ chocolate" data-price="9">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Cookies c/ recheio de brigadeiro (2 un. 40g)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Cookies c/ recheio de brigadeiro"
+                  data-price="10"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Nata c/ coco (90g)</p>
-                            <button class="add-to-cart-btn" data-name="Bolachinha de nata com coco"
-                                data-price="9">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Cookies c/ recheio de doce de leite (2 un. 40g)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Cookies c/ recheio de doce de leite"
+                  data-price="10"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+            </details>
+            <!-- FIM OPÇÕES BOLACHINHAS -->
 
-                        <div class="item">
-                            <p>Cookies c/ recheio de brigadeiro (2 un. 40g)</p>
-                            <button class="add-to-cart-btn" data-name="Cookies c/ recheio de brigadeiro" data-price="10">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+            <!-- OPÇÕES OUTROS -->
+            <details>
+              <summary>Outros</summary>
 
-                        <div class="item">
-                            <p>Cookies c/ recheio de doce de leite (2 un. 40g)</p>
-                            <button class="add-to-cart-btn" data-name="Cookies c/ recheio de doce de leite" data-price="10">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Morango do Amor ⭐ (1 un)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Morango do Amor"
+                  data-price="15"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                    </details>
+              <div class="item">
+                <p>Uva do Amor ⭐ (4 un)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Uva do Amor"
+                  data-price="14"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                    <details>
-                        <summary>Bala de brigadeiro</summary>
+              <div class="item">
+                <p>Cone de Dois Amores ⭐</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Cone de Dois Amores"
+                  data-price="9"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Chocolate 70% (100g)</p>
-                            <button class="add-to-cart-btn" data-name="Bala de chocolate 70%" data-price="12">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Cone de Sensação</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Cone de Sensação"
+                  data-price="9"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
 
-                        <div class="item">
-                            <p>Ninho (100g)</p>
-                            <button class="add-to-cart-btn" data-name="Bala de ninho" data-price="12">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
+              <div class="item">
+                <p>Bala Baiana (4 un)</p>
+                <button
+                  class="add-to-cart-btn"
+                  data-name="Bala Baiana"
+                  data-price="12"
+                >
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+            </details>
+            <!-- FIM OPÇÕES OUTROS -->
+          </div>
 
-                        <div class="item">
-                            <p>Paçoca (100g)</p>
-                            <button class="add-to-cart-btn" data-name="Bala de paçoca"
-                                data-price="12">
-                                <i class="bi bi-cart-plus"></i>
-                            </button>
-                        </div>
-
-                    </details>
-                </div>
-
-                <div class="cart-resume">
-
-                    <div id="cart-items">
-                        <div>
-                            <strong>Resumo do pedido:</strong>
-                        </div>
-                    </div>
-
-                    <p><strong>Valor total:</strong> <span id="cart-total">0.00</span></p>
-
-                    <button id="checkout-btn">
-                        Enviar pedido <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                            class="bi bi-whatsapp" viewBox="0 0 16 16">
-                            <path
-                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                        </svg>
-                    </button>
-
-                </div>
+          <div class="cart-resume">
+            <div id="cart-items">
+              <div>
+                <strong>Resumo do pedido:</strong>
+              </div>
             </div>
-        </div>
 
-        <div class="mask"></div>
+            <p>
+              <strong>Valor total:</strong> <span id="cart-total">0.00</span>
+            </p>
+
+            <button id="checkout-btn">
+              Enviar pedido
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                fill="currentColor"
+                class="bi bi-whatsapp"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask"></div>
     </main>
-</body>
+  </body>
 
-<script src="assets/js/dom.js"></script>
-<script src="assets/js/details.js"></script>
-<script src="assets/js/cart.js"></script>
-
+  <script src="assets/js/dom.js"></script>
+  <script src="assets/js/details.js"></script>
+  <script src="assets/js/cart.js"></script>
 </html>
